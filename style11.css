@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; */
+    display: inline-block;
+    height: 500px;
+    width: 100vw;
+    background-color: aqua;
+} 
+#box{
+    height: 50px;
+    width: 50px;
+    background-color: steelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(251, 253, 253);
+}
