@@ -1,3 +1,4 @@
+/* radhakrishna505 */
 *{
     padding: 0px;
     margin: 0px;
@@ -5,10 +6,31 @@
 }
 body{
     height: 100vh;
-    background-image: url(solosystembackground.jpg);
+    background-image: url(solosystembackground.webp);
     background-size:cover;
     background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-areas: "header header header"
+                         "box item boxs"
+                         "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr ;
 }
+
+
+
+.logform{
+    grid-area: item;
+    
+}
+.logform{
+    display: grid;
+    grid-template-areas: "s01 s02 s03"
+                         "s04 s05 s06"
+                         "s07 s08 s09";
+}
+
 h1 {
   color: rgba(255,255,255,0.80);
   text-shadow: 
@@ -21,10 +43,12 @@ h1 {
     color: rgb(203, 202, 210);
     text-align: center;
     font-size: 41px;
+    place-items: center;
 }
 .login{
-    height: 400px;
-    width: 500px;
+    /* height: 400px;
+    width: 500px; */
+    grid-area: s05;
 
     background:rgba(255,255,255,0.15);
     backdrop-filter: blur(2px);
@@ -32,7 +56,7 @@ h1 {
     box-shadow: 
     10px -10px 50px rgba(0,0,0,0.5),
    inset 0px 0px 12px rgba(255,255,255,0.20),
-   0px 0px 18px rgba(0,170,255,0.30); 
+   0px 0px 18px rgba(0,170,255,0.30);
     
 
    
@@ -43,6 +67,8 @@ h1 {
     align-items: center;
     margin:  80px auto;
     position: relative;
+
+    
     
     
     animation: slideleft 2s ease forwards;
@@ -163,4 +189,31 @@ button:hover {
   box-shadow:
     0 0 16px rgba(0,170,255,0.7); 
   transform: scale(1.05);
+}
+
+.title{
+    grid-area: header;
+    place-items: center;
+}
+.login{
+    display: grid;
+    grid-template-areas: "s1 s2 s3"
+                         "s4 s5 s6"
+                         "s7 s8 s9";
+    grid-template-columns: 1fr 2fr 1fr;   
+                    
+
+
+}
+
+.loginput{
+    grid-area: s5;
+    place-items: center;
+    margin:auto;
+}
+.logbutton{
+    grid-area: s8;
+    place-items: center;
+    margin: auto;
+    /* margin-left:23px */
 }
